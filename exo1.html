@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tp java script</title>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var num=prompt("donner un numero:","");
+if(isNaN(num))
+{
+  document.write("numero incorrect "+"<br/>");
+}
+else
+{
+   document.write("numero correct "+num+"<br/>");
+   x=String(num);
+   y=parselnt(x);
+   ch=eval(x+w);
+   document.write("y="+y+"<br/>");
+   document.write("w="+w+"<br/>");
+   document.write("z="+z+"<br/>");
+   document.write("ch="+ch+"<br/>");
+}
+</script>
+
+<script type="text/javascript">
+  a=prompt("donner un premier nombre :");
+  b=prompt("donner un deuxieme nombre :");
+  if((isNaN(a)||(isNaN(b))))
+  {
+     alert("donner deux nombre");
+  }
+  else
+  {
+     a=Number(a);
+	 b=Number(b);
+	 c=a+b;
+	 alert("la somme = "+c);
+  }
+</script>
+
+ <script language="javascript" src="script1.js">
+</script>
+
+<script language="javascript">
+var nom= prompt("votre nom :") ;
+var bonjour="Bonjour" ;
+var question="comment aller-vous" ;
+var phrase=bonjour + "<br/>" + question ;
+ document.write(phrase,"\t aujourd'huit? Mr "+nom) ;
+</script>
+<script>
+var patate = 25 ;
+   alert("la variable patate vaut " + patate) ;
+   patate=patate*2 ;
+   alert("variable patate * 2 done "+patate) ;
+</script>
+<script>
+var sum=0 ;
+for(var i=1;i<=10;i++)
+  {
+     if(i%2==0)
+	   sum+=i ;
+  }
+ alert("la somme des nombre paires compris entre 1 et 10 = "+sum) ;
+</script>
+<script type="text/javascript">
+function produit()
+{
+     result=1 ;
+	 for(i=0;i<arguments.length;i++)
+	 {
+	     result *= arguments[i] ;
+	 }
+	 return result;
+}
+	 alert(produit(3,2));
+	 alert(produit(3,5,4));
+</script>
+</body>
+</html>
